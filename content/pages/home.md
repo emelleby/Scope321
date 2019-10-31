@@ -7,6 +7,8 @@ subtitle: Hvor dine Scope 3 utslipp blir din leverandørs Scope 1
 accordion:
   - content: Lots of good content
     title: Accordion here
+  - content: Lots of good content too
+    title: Accordion here too
 meta:
   description: This is a meta description.
   title: Scope 3 2 1
