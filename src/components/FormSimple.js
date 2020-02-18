@@ -14,7 +14,7 @@ export default ({
     data-netlify='true'
     data-netlify-honeypot='_gotcha'
   >
-    <label className='Form--Label'>
+    <label className='Form--Label Form--InputText'>
       <input
         className='Form--Input'
         type='text'
@@ -24,7 +24,7 @@ export default ({
       />
       <span>Name</span>
     </label>
-    <label className='Form--Label'>
+    <label className='Form--Label Form--InputText'>
       <input
         className='Form--Input'
         type='email'
@@ -48,7 +48,7 @@ export default ({
         <option>Want to say hello</option>
       </select>
     </label>
-    <label className='Form--Label'>
+    <label className='Form--Label Form--InputText'>
       <textarea
         className='Form--Input Form--Textarea'
         placeholder='Message'
