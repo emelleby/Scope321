@@ -22,6 +22,7 @@ export default ({
         name='name'
         required
       />
+      <span>Name</span>
     </label>
     <label className='Form--Label'>
       <input
