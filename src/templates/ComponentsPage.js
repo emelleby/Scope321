@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { BuilderComponent, builder } from '@builder.io/react';
 
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content.js'
@@ -67,6 +68,21 @@ export const ComponentsPageTemplate = ({
         </Popup>
       </div>
     </section>
+
+    <section className="section">
+      <div className="container">
+        <Popup>
+          <Content source={section1} />
+        </Popup>
+      </div>
+    </section>
+
+    <section className="section">
+      <div className="container">
+      <p>Here is the Builder.io component.</p>
+      </div>
+    </section>
+
   </main>
 )
 
