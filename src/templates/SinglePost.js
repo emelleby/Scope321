@@ -35,7 +35,7 @@ export const SinglePostTemplate = ({
                 date={date}
               >
                 {date}
-                // {_format(date, 'MMMM Do, YYYY')}
+                {/* {_format(date, 'MMMM Do, YYYY')}*/}
               </time>
             )}
             {categories && (
