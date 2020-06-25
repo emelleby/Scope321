@@ -80,6 +80,7 @@ export const ComponentsPageTemplate = ({
     <section className="section">
       <div className="container">
       <p>Here is the Builder.io component.</p>
+      <p>Soon I will put it in.</p>
       </div>
     </section>
 
