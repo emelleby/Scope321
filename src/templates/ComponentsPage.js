@@ -72,7 +72,7 @@ export const ComponentsPageTemplate = ({
     <section className="section">
       <div className="container">
         <Popup>
-          <Content source={section1} />
+          <BuilderComponent model="popup" content={builder.popup[0]?.content} />
         </Popup>
       </div>
     </section>
@@ -87,12 +87,12 @@ export const ComponentsPageTemplate = ({
   </main>
 )
 
-const ComponentsPage = ({ data: { page } }) => (
+const ComponentsPage = ({ data: { page, builder } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
-    <ComponentsPageTemplate {...page} {...page.frontmatter} body={page.html} />
+    <ComponentsPageTemplate {...builder} {...page} {...page.frontmatter} body={page.html} />
   </Layout>
 )
 
@@ -118,6 +118,14 @@ export const pageQuery = graphql`
           title
           description
         }
+      }
+    }
+    builder: allBuilderModels {
+      popup(
+        limit: 1
+        options: { cachebust: true }
+      ) {
+        content
       }
     }
   }
