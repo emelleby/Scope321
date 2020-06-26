@@ -9,6 +9,7 @@ import Accordion from '../components/Accordion'
 import BackgroundVideo from '../components/BackgroundVideo'
 import Gallery from '../components/Gallery'
 import Popup from '../components/Popup'
+import PopupPage from './popup.tsx'
 
 // Export Template for use in CMS preview
 export const ComponentsPageTemplate = ({
@@ -72,7 +73,7 @@ export const ComponentsPageTemplate = ({
     <section className="section">
       <div className="container">
         <Popup>
-          <BuilderComponent model="popup" content={content} />
+          <PopupPage />
         </Popup>
       </div>
     </section>
@@ -92,7 +93,7 @@ const ComponentsPage = ({ data: { page, builder } }) => (
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
-    <ComponentsPageTemplate content={builder.popup[0]?.content} {...page} {...page.frontmatter} body={page.html} />
+    <ComponentsPageTemplate {...page} {...page.frontmatter} body={page.html} />
   </Layout>
 )
 
