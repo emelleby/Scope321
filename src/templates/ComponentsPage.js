@@ -93,7 +93,7 @@ const ComponentsPage = ({ data: { page, builder } }) => (
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
-    <ComponentsPageTemplate {...page} {...page.frontmatter} body={page.html} />
+    <ComponentsPageTemplate {...page} {...builder.popup} {...page.frontmatter} body={page.html} />
   </Layout>
 )
 
