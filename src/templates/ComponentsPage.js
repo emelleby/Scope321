@@ -72,7 +72,7 @@ export const ComponentsPageTemplate = ({
     <section className="section">
       <div className="container">
         <Popup>
-          <BuilderComponent model="popup" content={builder.popup[0]?.content} />
+          <BuilderComponent model="popup" content={content} />
         </Popup>
       </div>
     </section>
@@ -92,7 +92,7 @@ const ComponentsPage = ({ data: { page, builder } }) => (
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
-    <ComponentsPageTemplate {...builder} {...page} {...page.frontmatter} body={page.html} />
+    <ComponentsPageTemplate content={builder.popup[0]?.content} {...page} {...page.frontmatter} body={page.html} />
   </Layout>
 )
 

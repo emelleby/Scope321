@@ -12,11 +12,11 @@ import '@builder.io/widgets';
 // TODO: enter your public API key - Done
 builder.init('44b093e300534e7b9bfdfc34cb1189b5');
 
-interface PageTemplateProps {
+interface PopupTemplateProps {
   data: { allBuilderModels: { popup: { content: any }[] } };
 }
 
-const PageTemplate: React.SFC<PageTemplateProps> = ({ data }) => {
+const PopupTemplate: React.SFC<PopupTemplateProps> = ({ data }) => {
   const content = data.allBuilderModels.popup[0]?.content;
   return (
     <>
@@ -25,7 +25,7 @@ const PageTemplate: React.SFC<PageTemplateProps> = ({ data }) => {
   );
 };
 
-export default PageTemplate;
+export default PopupTemplate;
 export const pageQuery = graphql`
   query($path: String!) {
     allBuilderModels {
