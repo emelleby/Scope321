@@ -73,7 +73,7 @@ export const ComponentsPageTemplate = ({
     <section className="section">
       <div className="container">
         <Popup>
-          <PopupPage />
+          <PopupPage content={builder.popup[0].content} />
         </Popup>
       </div>
     </section>
