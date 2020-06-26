@@ -27,7 +27,7 @@ const PopupTemplate: React.SFC<PopupTemplateProps> = ({ data }) => {
 
 export default PopupTemplate;
 export const pageQuery = graphql`
-  query($path: String!) {
+  query {
     allBuilderModels {
       popup(limit: 1, options: { cachebust: true }) {
         content
