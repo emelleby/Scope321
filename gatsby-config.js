@@ -24,7 +24,7 @@ module.exports = {
           page: path.resolve('src/templates/page.tsx'),
           header: path.resolve('src/templates/header.tsx'),
           defaultpage: path.resolve('src/templates/defaultPage.tsx'),
-          // popup: path.resolve('src/templates/popup.tsx')
+          popup: path.resolve('src/templates/popup.tsx')
         }
       }
     },
